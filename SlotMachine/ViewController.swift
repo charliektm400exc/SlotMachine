@@ -74,6 +74,10 @@ class ViewController: UIViewController {
     func betMaxButtonPressed (button: UIButton) {
         println("betMaxButtonPressed")
     }
+    
+    func spinButtonPressed (button: UIButton) {
+        println("spinButtonPressed")
+    }
 
     func setupContainerViews () {
         self.firstContainer = UIView(frame: CGRect(
@@ -220,7 +224,7 @@ class ViewController: UIViewController {
         self.spinButton.backgroundColor = UIColor.greenColor()
         self.spinButton.sizeToFit()
         self.spinButton.center = CGPoint(x: containerView.frame.width * 7 * kEigth, y: containerView.frame.height * kHalf)
-        self.spinButton.addTarget(self, action: "spinButtonPressed", forControlEvents: UIControlEvents.TouchUpInside)
+        self.spinButton.addTarget(self, action: "spinButtonPressed:", forControlEvents: UIControlEvents.TouchUpInside)
         containerView.addSubview(self.spinButton)
         
         
