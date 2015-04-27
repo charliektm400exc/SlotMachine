@@ -50,7 +50,7 @@ class SlotBrain {
         for slotRow in slotsInRows {
             
             if checkFlush(slotRow) == true {
-                println("Fluch")
+                println("Flush")
                 winnings += 1
                 flushWinCount += 1
             }
